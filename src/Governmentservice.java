@@ -3,12 +3,13 @@ public abstract  class Governmentservice {
     protected  double FeeCharged;
 
 
-    public Governmentservice(String ServiceName, String s, double FeeCharged) {
+    public Governmentservice(String ServiceName, double FeeCharged) {
         this.ServiceName = ServiceName;
         this.FeeCharged = FeeCharged;
     }
 
     public String getServiceName() {
+
         return ServiceName;
     }
 
@@ -17,16 +18,16 @@ public abstract  class Governmentservice {
 
     }
 
-    public void setServiceName(String serviceName) {
-        this.ServiceName = serviceName;
+    @Override
+    public String toString() {
+        return "Governmentservice{" +
+                "ServiceName='" + ServiceName + '\'' +
+                ", FeeCharged=" + FeeCharged +
+                '}';
     }
-
-    public void setFeeCharged(double feeCharged) {
-        this.FeeCharged = feeCharged;
-
-    }
-    public abstract void processService();
 }
+
+
 
 
 

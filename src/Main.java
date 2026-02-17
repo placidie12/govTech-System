@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Scanner scanner = new Scanner(System.in);
         ManagerApplication manager = new ManagerApplication();
 
@@ -41,8 +42,7 @@ public class Main {
                     System.out.print("Full Name: ");
                     String fullName = scanner.nextLine();
 
-                    System.out.print("Citizen ID: ");
-                    String citizenId = scanner.nextLine();
+
 
                     System.out.print("National ID: ");
                     String nationalId = scanner.nextLine();
@@ -50,8 +50,7 @@ public class Main {
                     System.out.print("Email: ");
                     String email = scanner.nextLine();
 
-                    System.out.print("Phone Number: ");
-                    String phone = scanner.nextLine();
+
 
 
                     System.out.println("Available Services:");
@@ -60,7 +59,7 @@ public class Main {
                     System.out.print("Choose a service: ");
                     int serviceChoice = Integer.parseInt(scanner.nextLine());
 
-                    Citizens citizen = new Citizens(fullName, citizenId, nationalId, email, phone);
+                    Citizens citizen = new Citizens(fullName, nationalId, email);
                     Governmentservice service;
 
                     if (serviceChoice == 1) {
