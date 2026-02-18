@@ -111,7 +111,7 @@ public class ManagerApplication {
                 ServiceApplication.Status status = ServiceApplication.Status.valueOf(parts[4]);
 
 
-                Citizens citizen = new Citizens(fullName, "N/A", "N/A", "N/A", "N/A");
+                Citizens citizen = new Citizens(fullName, "N/A", "N/A");
 
                 Governmentservice service = null;
                 if(serviceName.equals("Marriage Certificate")) service = new MarriageCertificate();

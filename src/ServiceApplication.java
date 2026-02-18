@@ -1,4 +1,4 @@
-import java.util.UUID;
+
 
 public class ServiceApplication {
 
@@ -12,22 +12,26 @@ public class ServiceApplication {
     private Status status;
 
     public ServiceApplication(Citizens applicant, Governmentservice service) {
-        this.applicationId = UUID.randomUUID().toString();
+        this.applicationId = getApplicationId();
         this.applicant = applicant;
         this.service = service;
         this.status = Status.PENDING;
     }
 
     public String getApplicationId() {
+
         return applicationId;
             }
     public Citizens getApplicant() {
+
         return applicant;
                   }
     public Governmentservice getService() {
+
         return service;
              }
     public Status getStatus() {
+
         return status;
              }
 
@@ -35,18 +39,13 @@ public class ServiceApplication {
         this.status = status;
     }
 
-    public void approve() throws InvalidStatusException {
-        if (status != Status.PENDING) {
-            throw new InvalidStatusException("Cannot approve an application that is not pending!");
-        }
-        status = Status.APPROVED;
-    }
 
-    public void reject() throws InvalidStatusException {
-        if (status != Status.PENDING) {
-            throw new InvalidStatusException("Cannot reject an application that is not pending!");
+
+    public void Status(Status Status) throws InvalidStatusException {
+        if (this.status == Status) {
+            throw new InvalidStatusException("Application is already " + Status);
         }
-        status = Status.REJECTED;
+        this.status = Status;
     }
 
     @Override

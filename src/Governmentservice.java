@@ -1,7 +1,6 @@
-public abstract  class Governmentservice {
+public abstract class Governmentservice {
     protected String ServiceName;
     protected double FeeCharged;
-
 
     public Governmentservice(String ServiceName, double FeeCharged) {
         this.ServiceName = ServiceName;
@@ -9,13 +8,11 @@ public abstract  class Governmentservice {
     }
 
     public String getServiceName() {
-
         return ServiceName;
     }
 
     public Double getFeeCharged() {
         return FeeCharged;
-
     }
 
     @Override
@@ -26,6 +23,3 @@ public abstract  class Governmentservice {
                 '}';
     }
 }
-
-
-

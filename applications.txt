@@ -1,5 +1,5 @@
-f402b234-3afe-41d0-bdc7-cd3c0da9732b|Citizen Details:
-Full Names   : asdfgh
-Email : fghjk
-ID   : dfghjk
-Phone Number : ghjkl]|Marriage Certificate|50.0|PENDING
+7b0fb372-5e99-49c6-ae0c-e54203966ced|Citizen Details:
+Full Names   : mnbvc
+Email : 23456
+ID   : null
+NationalID : 234567|Criminal Record|1500.0|PENDING

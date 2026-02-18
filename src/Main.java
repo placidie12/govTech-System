@@ -60,7 +60,7 @@ public class Main {
                     System.out.print("Choose a service: ");
                     int serviceChoice = Integer.parseInt(scanner.nextLine());
 
-                    Citizens citizen = new Citizens(fullName, citizenId, nationalId, email, phone);
+                    Citizens citizen = new Citizens(fullName, nationalId, email);
                     Governmentservice service;
 
                     if (serviceChoice == 1) {
