@@ -3,7 +3,7 @@ public abstract  class Governmentservice {
     protected  double FeeCharged;
 
 
-    public Governmentservice(String ServiceName, String s, double FeeCharged) {
+    public Governmentservice(String ServiceName, double FeeCharged) {
         this.ServiceName = ServiceName;
         this.FeeCharged = FeeCharged;
     }
