@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        ManagerApplication manager = new ManagerApplication();
+        ApplicationManager manager = new ApplicationManager();
 
 
 

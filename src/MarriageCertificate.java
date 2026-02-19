@@ -5,8 +5,5 @@ public class MarriageCertificate extends Governmentservice {
     }
 
 
-    @Override
-    public void processService() {
 
-    }
 }
